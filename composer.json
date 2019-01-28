@@ -1,0 +1,53 @@
+{
+    "name": "Ash Renovation",
+    "type": "project",
+    "description": "Site Description",
+    "homepage": "https://ashrenovations.com",
+    "authors": [{
+        "name": "John Cobbs",
+        "email": "john@telegraphcreative.com"
+    }],
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    }],
+    "require": {
+        "php": ">=5.6",
+        "composer/installers": "^1.4",
+        "vlucas/phpdotenv": "^2.0.1",
+        "johnpbloch/wordpress": "5.0.3",
+        "oscarotero/env": "^1.1.0",
+        "roots/wp-password-bcrypt": "1.0.0",
+        "wpackagist-plugin/backwpup": "3.6.7",
+        "wpackagist-plugin/codepress-admin-columns": "3.3.1",
+        "wpackagist-plugin/disable-emojis": "1.7.2",
+        "wpackagist-plugin/disable-comments": "1.8.0",
+        "wpackagist-plugin/wp-mail-smtp": "1.4.1",
+        "wpackagist-plugin/wordpress-seo": "9.5"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "web/wp"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "test": [
+            "phpcs"
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# Compiled assets
+/web/app/themes/ash-reno/css/theme.css
+/web/app/themes/ash-reno/css/theme.min.css
+/web/app/themes/ash-reno/css/theme.min.css.map
+/web/app/themes/ash-reno/js/theme.min.js
+/web/app/themes/ash-reno/js/theme.js
+/web/app/themes/ash-reno/js/popper.js
+/web/app/themes/ash-reno/js/popper.min.js
+/web/app/themes/ash-reno/js/skip-link-focus-fix.js
+
+# Paid plugins
+!web/app/plugins/advanced-custom-fields-pro
+!web/app/plugins/gravityforms
+!web/app/plugins/wp-migrate-db-pro
+!web/app/plugins/wp-migrate-db-pro-media-files
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+# Operating system files
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+.idea
+
+# Db migrate pro compatibility settings
+web/app/mu-plugins/wp-migrate-db-pro-compatibility.php
+
+# VS Code
+IsolatedStorage
+
+# query monitor db file
+web/app/db.php
+
+# Node Package Manager
+node_modules
+
+#cache plugin config and cache
+web/app/cache/
+web/app/wpsol-config/
+web/app/advanced-cache.php
