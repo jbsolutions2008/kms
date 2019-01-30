@@ -9,4 +9,4 @@
 	define( 'GOOGLE_TAG_MANAGER_ID', 'GTM-XXXXXX' );
 
 	// CPTs names
-	define( 'TELE_CPT_EXAMPLE', 'example' );
+	define( 'TELE_CPT_PROJECT', 'project' );

@@ -5,6 +5,6 @@
 	require_once( TELE_LIBRARY . 'config/setup.php' );
 
 	// CPTs
-	require_once( TELE_LIBRARY . 'cpt/cpt-example.php' );
+	require_once( TELE_LIBRARY . 'cpt/cpt-project.php' );
 
 
