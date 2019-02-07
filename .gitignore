@@ -5,15 +5,15 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
-# Compiled assets
-/web/app/themes/ash-reno/css/theme.css
-/web/app/themes/ash-reno/css/theme.min.css
-/web/app/themes/ash-reno/css/theme.min.css.map
-/web/app/themes/ash-reno/js/theme.min.js
-/web/app/themes/ash-reno/js/theme.js
-/web/app/themes/ash-reno/js/popper.js
-/web/app/themes/ash-reno/js/popper.min.js
-/web/app/themes/ash-reno/js/skip-link-focus-fix.js
+# Compiled assets -- pushed on deploy
+/web/app/themes/telstar/css/theme.css
+/web/app/themes/telstar/css/theme.min.css
+/web/app/themes/telstar/css/theme.min.css.map
+/web/app/themes/telstar/js/theme.min.js
+/web/app/themes/telstar/js/theme.js
+/web/app/themes/telstar/js/popper.js
+/web/app/themes/telstar/js/popper.min.js
+/web/app/themes/telstar/js/skip-link-focus-fix.js
 
 # Paid plugins
 !web/app/plugins/advanced-custom-fields-pro
