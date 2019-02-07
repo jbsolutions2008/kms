@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "http://ash.test",
+    "proxy": "http://yours-site.test",
     "notify": false
   },
   "browserSyncWatchFiles" : [

@@ -18,10 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
-<?php endif; ?>
-
 <div class="wrapper" id="index-wrapper">
 
 	<div id="content" tabindex="-1">
