@@ -25,8 +25,8 @@
         "wpackagist-plugin/codepress-admin-columns": "3.4.1",
         "wpackagist-plugin/disable-emojis": "1.7.2",
         "wpackagist-plugin/disable-comments": "1.9.0",
-        "wpackagist-plugin/wp-mail-smtp": "1.4.1",
-        "wpackagist-plugin/wordpress-seo": "10.0.1"
+        "wpackagist-plugin/wp-mail-smtp": "1.4.2",
+        "wpackagist-plugin/wordpress-seo": "11.0"
     },
     "extra": {
         "installer-paths": {
