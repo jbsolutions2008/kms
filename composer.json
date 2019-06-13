@@ -1,8 +1,8 @@
 {
-    "name": "WordPressStarter2",
+    "name": "WordPressStarter2019",
     "type": "project",
-    "description": "Site Description",
-    "homepage": "https://domain.com",
+    "description": "Wordpress Starter Repo",
+    "homepage": "https://github.com/Telegraph-Creative/wordpress-starter-2019",
     "authors": [{
         "name": "John Cobbs",
         "email": "john@telegraphcreative.com"
