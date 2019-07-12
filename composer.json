@@ -21,12 +21,14 @@
         "johnpbloch/wordpress": "5.2.1",
         "oscarotero/env": "^1.1.0",
         "roots/wp-password-bcrypt": "1.0.0",
-        "wpackagist-plugin/backwpup": "3.6.9",
+        "wpackagist-plugin/backwpup": "3.6.10",
+        "wpackagist-plugin/classic-editor": "1.5",
         "wpackagist-plugin/codepress-admin-columns": "3.4.1",
         "wpackagist-plugin/disable-emojis": "1.7.2",
         "wpackagist-plugin/disable-comments": "1.9.0",
-        "wpackagist-plugin/wp-mail-smtp": "1.4.2",
-        "wpackagist-plugin/wordpress-seo": "11.4"
+        "wpackagist-plugin/post-types-order": "1.9.4.1",
+        "wpackagist-plugin/wp-mail-smtp": "1.5.1",
+        "wpackagist-plugin/wordpress-seo": "11.6"
     },
     "extra": {
         "installer-paths": {
