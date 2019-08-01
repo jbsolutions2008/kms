@@ -5,6 +5,7 @@
 	add_filter( 'acf/settings/save_json', __NAMESPACE__ . '\\set_acf_json_save_path' );
 	add_filter( 'acf/settings/load_json', __NAMESPACE__ . '\\set_acf_json_load_path' );
 	add_filter( 'plugins_loaded', __NAMESPACE__ . '\\initialize_acf_option_pages' );
+    add_filter( 'upload_mimes', __NAMESPACE__ . '\\extend_mime_types' );
 
 	function set_acf_json_save_path() {
 		return TELE_LIBRARY . 'acf-json';
@@ -16,6 +17,11 @@
 		$paths[] = TELE_LIBRARY . 'acf-json';
 
 		return $paths;
+	}
+
+	function extend_mime_types( $mimes ) {
+		$mimes['svg'] = 'image/svg+xml';
+		return $mimes;
 	}
 
 	function initialize_acf_option_pages() {
