@@ -68,5 +68,5 @@ This starter uses generic text in several places both for descriptions and file 
 
 1. `.gitignore` : update "telestar" theme name to actual theme name if changed
 2. `composer.json` : update project name, details, URL, etc
-3. `.env (from .env.example)`: update WP_HOME global
+3. `.env (from .env.example)`: update database name & WP_HOME global
 4. `web/app/themes/telstar/gulpconfig.json`: update proxy to local test env
