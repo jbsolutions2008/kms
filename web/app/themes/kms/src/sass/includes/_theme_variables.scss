@@ -2,4 +2,21 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
-$primary: #0061ff; // Thats a sample how you could change a BootStrap variable.
+$primary-color: #4c6ca8;
+$secondary-color: #022775;
+$light-blue-color :#b4bad1;
+$dark-gray-color: #e2e2e2;
+$light-gray-color:#f4f4f4;
+$red-color:#cc0f2d;
+$black-color:#000000;
+$white-color: #ffffff;
+
+//Theme Fonts Variables
+$body-font:'DINPro';
+$hedding-font-bk:'United Sans Rg Bk';
+$hedding-font-bd:'United Sans Rg Bd';
+$hedding-font-hv:'United Sans Rg Hv';
+$hedding-font-stencil:'United Sans Rg Stencil';
+$hedding-font-md:'United Sans Rg Md';
+$hedding-font-lt:'United Sans Rg Lt';
+$hedding-font-th:'United Sans Rg Th';
