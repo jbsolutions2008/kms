@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "http://yours-site.test",
+    "proxy": "http://kms.test",
     "notify": false
   },
   "browserSyncWatchFiles" : [

@@ -6,14 +6,14 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # Compiled assets -- pushed on deploy
-/web/app/themes/telstar/css/theme.css
-/web/app/themes/telstar/css/theme.min.css
-/web/app/themes/telstar/css/theme.min.css.map
-/web/app/themes/telstar/js/theme.min.js
-/web/app/themes/telstar/js/theme.js
-/web/app/themes/telstar/js/popper.js
-/web/app/themes/telstar/js/popper.min.js
-/web/app/themes/telstar/js/skip-link-focus-fix.js
+/web/app/themes/kms/css/theme.css
+/web/app/themes/kms/css/theme.min.css
+/web/app/themes/kms/css/theme.min.css.map
+/web/app/themes/kms/js/theme.min.js
+/web/app/themes/kms/js/theme.js
+/web/app/themes/kms/js/popper.js
+/web/app/themes/kms/js/popper.min.js
+/web/app/themes/kms/js/skip-link-focus-fix.js
 
 # Paid plugins
 !web/app/plugins/advanced-custom-fields-pro

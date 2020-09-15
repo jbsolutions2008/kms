@@ -1,8 +1,8 @@
 {
-    "name": "telegraph/wordpress-starter-2019",
+    "name": "telegraph/kms",
     "type": "project",
-    "description": "Wordpress Starter Repo",
-    "homepage": "https://github.com/Telegraph-Creative/wordpress-starter-2019",
+    "description": "Kemp Management Solutions Repo",
+    "homepage": "https://github.com/Telegraph-Creative/kms",
     "authors": [{
         "name": "John Cobbs",
         "email": "john@telegraphcreative.com"
