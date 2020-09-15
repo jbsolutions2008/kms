@@ -231,11 +231,13 @@ h6,
     font-size: 18px;
 }
 
-.h6-small {
+.fs-16 {
     font-size: 16px;
 }
-
-.font-small {
+.fs-15 {
+    font-size: 15px;
+}
+.fs-14 {
     font-size: 14px;
 }
 
@@ -503,6 +505,10 @@ img {
     justify-content: center;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -567,15 +573,15 @@ textarea,
     font-family: $body-font;
     font-weight: 600;
     border-radius: 0px;
-    padding: 14px 25px;
+    padding: 18px 20px;
     border: 0px solid $primary-color;
     display: inline-table;
     i {
         float: right;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 15px;
         margin-top: 3px;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 }
 
@@ -681,6 +687,11 @@ textarea,
             .main-menu {
                 width: 100%;
             }
+            .menu-social-menu-container {
+                border-left:1px solid $white-color;
+                padding-left: 34px;
+                margin-left: 34px;
+            }
         }
         .header-logo {
             display: flex;
@@ -708,13 +719,14 @@ textarea,
                 font-weight: 500;
                 text-transform: uppercase;
                 position: relative;
+                padding-top:4px;
                 padding-bottom:4px;
                 a.nav-link {
                     color: $white-color;
                     position: relative;
                     &:hover {
                         text-decoration: none;
-                        color: $secondary-color;
+                        color: $light-blue-color;
                     }
                 }
                 &:first-child {
@@ -770,7 +782,7 @@ textarea,
             li.current-menu-item {
                 a {
                     // text-decoration: underline;
-                    color: $secondary-color;
+                    color: $light-gray-color;
                 }
             }
         }
@@ -817,22 +829,64 @@ textarea,
     }
 }
 
+//Social Menu
+.menu-social-menu-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 12px auto;
+    .social-menu-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        li {
+            text-align: center;
+            margin-left: 12px;
+            a {
+                width: 100%;
+                text-align: center;
+                font-size: 0;
+                text-decoration: none;
+                text-align: center;
+                padding: 0;
+                color: $white-color;
+                &:before {
+                    // font-family: 'Font Awesome 5 Free';
+                    font-family: 'Font Awesome 5 Brands';
+                    font-size: 24px;
+                }
+                &:hover {
+                    color: $light-blue-color;
+                }
+            }
+            a[href*="facebook.com"]:before {
+                content: "\f082";
+            }
+            a[href*="twitter.com"]:before {
+                content: "\f099";
+            }
+            a[href*="instagram.com"]:before {
+                content: "\f16d";
+            }
+            a[href*="vimeo.com"]:before {
+                content: "\f27d";
+            }
+            a[href*="linkedin.com"]:before {
+                content: "\f08c";
+            }
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
 //Hero Header Css Classes
 .header-hero-section {
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-position: center!important;
+    background-position: center!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
-    &:before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        left: 0px;
-        top: 0px;
+    .header-hero-in {
         background: -moz-linear-gradient(left, rgba(3,37,120,0.7) 0%, rgba(185,41,36,0.5) 100%);
         background: -webkit-linear-gradient(left, rgba(3,37,120,0.7) 0%,rgba(185,41,36,0.5) 100%);
         background: linear-gradient(to right, rgba(3,37,120,0.7) 0%,rgba(185,41,36,0.5) 100%);
@@ -849,6 +903,53 @@ textarea,
 .blank-header {
     padding-top: 200px;
     height: auto;
+}
+
+
+// Footer Section Css
+.footer-wrapper {
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    footer.site-footer {
+        background: -moz-linear-gradient(left, rgba(3,37,120,0.8) 0%, rgba(185,41,36,0.8) 50%, rgba(3,37,120,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(3,37,120,0.8) 0%,rgba(185,41,36,0.8) 50%,rgba(3,37,120,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(3,37,120,0.8) 0%,rgba(185,41,36,0.8) 50%,rgba(3,37,120,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc032578', endColorstr='#032578',GradientType=1 ); /* IE6-9 */
+        .footer-bottom {
+            border-top: 1px solid $primary-color;
+            padding: 10px 0px;
+            .footer-bottom-left {
+                .copyright {
+                    margin: 10px 0px;
+                }
+            }
+            .footer-bottom-right {
+                span {
+                    margin: 10px 0px 10px 20px;
+                    a {
+                        color: $white-color;
+                        &:hover {
+                            color: $dark-gray-color;
+                        }
+                    }
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+                .menu-social-menu-container {
+                    margin-left: 25px;
+                    li {
+                        a {
+                            &:hover {
+                                color: $light-blue-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 

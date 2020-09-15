@@ -14,15 +14,16 @@ get_header();
 	<div id="content">
 		<main class="site-main" id="main">
 
-	<!-- Home Page Hero Header Section -->
-	<section class="bg-light-grey header-hero-section pt-0 pb-0" style="background-image:url('/app/uploads/2020/09/hero-slide1.jpg');">
-		<div class="header-hero-container container-lg">
-			<h2 class="section-title h1 text-white text-uppercase line-height-normal mt-0 mb-0"><span>Innovation in Technology</span></h2>
-			<P class="text-white h6 line-height-normal">KMS represents the interest of owners from the beginning of a project to the end. We can handle site selections, due diligence, design management to project management and close-out.</P>
-			<p class="mb-0"><a href="#" class="btn">Partner with us <i class="fas fa-angle-right"></i></a></p>
-		</div>
-	</section>
-
+		<!-- Home Page Hero Header Section -->
+		<section class="bg-light-grey pt-0 pb-0 h-100 header-hero-section" style="background-image:url('/app/uploads/2020/09/hero-slide1.jpg');">
+			<div class="d-flex flex-wrap align-items-center justify-content-center h-100 header-hero-in">
+				<div class="header-hero-container container-lg">
+					<h2 class="section-title h1 text-white text-uppercase line-height-normal mt-0 mb-0"><span>Innovation in Technology</span></h2>
+					<P class="text-white h6 line-height-normal">KMS represents the interest of owners from the beginning of a project to the end. We can handle site selections, due diligence, design management to project management and close-out.</P>
+					<p class="mb-0"><a href="#" class="btn">Partner with us <i class="fas fa-angle-right"></i></a></p>
+				</div>
+			</div>
+		</section>
 
 </main><!-- #main -->
 	</div><!-- Container end -->
