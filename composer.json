@@ -28,7 +28,7 @@
         "wpackagist-plugin/disable-comments": "1.11.0",
         "wpackagist-plugin/post-types-order": "1.9.5.2",
         "wpackagist-plugin/wp-mail-smtp": "2.3.1",
-        "wpackagist-plugin/wordpress-seo": "12.5"
+        "wpackagist-plugin/wordpress-seo": "14.9"
     },
     "extra": {
         "installer-paths": {
