@@ -10,8 +10,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
+$custom_logo_id = get_theme_mod( 'custom_logo' );
+$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );	
 $container = get_theme_mod( 'understrap_container_type' );
+$header_logo = get_field('kms_header_logo','option');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -35,16 +37,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav class="navbar navbar-expand-md">
 			<div class="container">
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<div class="header-logo"><a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="/app/uploads/2020/09/logo-white.svg" alt="<?php bloginfo( 'name' ); ?>"></a></div>
+				<div class="header-logo">
+				<?php?>
+					<a class="navbar-brand logo-white" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?php echo $image[0]; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
+					<a class="navbar-brand logo-color" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?=$header_logo['url']?>" alt="<?php bloginfo( 'name' ); ?>"></a>
+				</div>
 			<?php else : ?>
-				<div class="header-logo"><a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="/app/uploads/2020/09/logo-white.svg" alt="<?php bloginfo( 'name' ); ?>"></a></div>
+				<div class="header-logo">
+					<a class="navbar-brand logo-white" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?php echo $image[0]; ?>" alt="<?php bloginfo( 'name' ); ?>"></a>
+					<a class="navbar-brand logo-color" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><img src="<?=$header_logo['url']?>" alt="<?php bloginfo( 'name' ); ?>"></a>
+				</div>
 			<?php endif; ?>
-
-			<div class="navbar-toggler" id="toggle">
-				<span class="top"></span>
-				<span class="middle"></span>
-				<span class="bottom"></span>
-			</div>
 
 			<!-- The WordPress Menu goes here -->
 			<?php wp_nav_menu(
@@ -71,6 +74,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
+				<div class="navbar-toggler" id="toggle">
+					<span class="top"></span>
+					<span class="middle"></span>
+					<span class="bottom"></span>
+				</div>
+				
 			</div>
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->

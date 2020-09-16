@@ -31,7 +31,31 @@ jQuery(".scroll-to-section a[href^='#']").click(function(e) {
         scrollTop: position
     } /* speed */ );
 });
-  
+
+// Hero Header Slider Function
+jQuery(document).ready(function() {
+    var galleryThumbs = new Swiper('.hero-slide-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: false,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper('.hero-slide-top', {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        loop: true,
+        //effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loopedSlides: 1, //looped slides should be the same
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+});
 
 // Footer - Sticky Footer Function
 jQuery(document).ready(function() {
