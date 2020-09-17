@@ -35,11 +35,33 @@ jQuery(".scroll-to-section a[href^='#']").click(function(e) {
 // Hero Header Slider Function
 jQuery(document).ready(function() {
     var galleryThumbs = new Swiper('.hero-slide-thumbs', {
-        spaceBetween: 10,
+        spaceBetween: 15,
         slidesPerView: 4,
         loop: false,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+              loop: true,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+              loop: true,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+              loop: true,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+              loop: false,
+            },
+          }
       });
       var galleryTop = new Swiper('.hero-slide-top', {
         spaceBetween: 0,

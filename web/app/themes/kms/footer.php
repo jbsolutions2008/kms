@@ -39,10 +39,10 @@ $footer_email_address  = get_field( 'kms_footer_email_address', 'options' );
 					<div class="d-flex flex-wrap align-items-center finish-dozens-title"><h2 class="mb-0 mt-0 text-white"><?=$title?> </h2></div>
 					<div class="d-flex flex-wrap align-items-stretch justify-content-between finish-dozens-box-items">
 					   <?php foreach($boxes as $data):?>
-						<div class="bg-white finish-dozens-box-item">
+						<div class="bg-white d-flex flex-wrap finish-dozens-box-item">
 							<h5 class="mt-0"><?=$data['kms_title'] ?></h5>
 							<p class="mt-0"><?=$data['kms_short_description'] ?></p>
-							<p class="mb-0"><a href="<?=$data['kms_button_url'] ?>" class="btn-link fs-18"><?=$data['kms_button_label'] ?> <span class="arrow">&#8250;</span></a></p>
+							<p class="mb-0 mt-auto"><a href="<?=$data['kms_button_url'] ?>" class="btn-link fs-18"><?=$data['kms_button_label'] ?> <span class="arrow">&#8250;</span></a></p>
 						</div>
 						<?php  endforeach;?>
 					</div>

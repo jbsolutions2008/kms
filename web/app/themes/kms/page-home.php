@@ -40,15 +40,15 @@ $descriptions =  $content_section['kms_descriptions'];
 			</div>
 		</div>
 		<div class="swiper-container hero-slide-thumbs">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper align-items-stretch">
 			<?php if( have_rows('kms_hero_section') ):
 				 while( have_rows('kms_hero_section') ) : the_row();
 				 $bottom_tab_title = get_sub_field('kms_bottom_tab_title');
 				 $bottom_tab_sub_title = get_sub_field('kms_bottom_tab_sub_title');
 				 ?>
 					<div class="swiper-slide">
-						<h6 class="mt-0 mb-0 text-white fs-17 font-default fw-600"><?=$bottom_tab_title?></h6>
-						<p class="mt-0 mb-0 text-white fs-14"><?=$bottom_tab_sub_title?></p>
+						<h6 class="mt-auto mb-0 text-white fs-17 font-default fw-600"><?=$bottom_tab_title?></h6>
+						<p class="mt-0 mb-auto text-white fs-14 line-height-normal"><?=$bottom_tab_sub_title?></p>
 					</div>
 			<?php endwhile;
 				endif; ?>
